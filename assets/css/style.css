@@ -9,11 +9,14 @@
 :root {
     --font-zoom: "Lato", sans-serif;
     --dark: #222222;
+    --darker: #000000;
     --alert: #ba2126;
     --white: #ffffff;
-    --hover: #4b52dc;
+    --hover: #bfc0d39f;
     --selection: #4bc700;
     --buttons: #4a4a4a;
+    --grey: #3c3f3fc5;
+    --username-bg: #474b4b6c;
 }
 
 .flex{
@@ -49,9 +52,9 @@ a:hover, .container div:hover, .container span:hover{
 
 /* /Region Header */
 
-#app-header, #app-main{
-    height: 45vh;
-    background-color: var(--selection);
+#app-header{
+    height: 10vh;
+    background-color: var(--darker);
 }
 
 .container{
@@ -60,6 +63,7 @@ a:hover, .container div:hover, .container span:hover{
     right: 1rem;
     justify-content: space-between;
     align-items: center;
+    z-index: 50;
 }
 
 .btn_size{
@@ -79,6 +83,42 @@ a:hover, .container div:hover, .container span:hover{
 
 /* /Region Main */
 
+#app-main{
+    height: 100vh;
+    background-color: var(--darker);
+}
+
+.card_container{
+    width: 95%;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.overview img{
+    width: 100%;
+}
+
+.img-card{
+    width: calc(100% / 7);
+    position: relative;
+    margin: 0.5rem 0;
+}
+
+.overview{
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    color: var(--white);
+    font-size: 0.8rem;
+    background-color: var(--username-bg);
+    padding: 0.2rem;
+}
+
+.fa-microphone-slash{
+    display: inline;
+    font-size: 1rem;
+    margin-right: 0.2rem;
+}
 /* /Endregion Main */
 
 /* /Region Footer */
@@ -92,19 +132,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     z-index: 99;
-    height: 10vh;
-}
-
-.left_menu{
-
-}
-
-.center_menu{
-
-}
-
-.right_menu{
-
+    height: 8vh;
 }
 
 .alert{
@@ -113,6 +141,12 @@ nav {
 
 .selection{
     color: var(--selection);
+}
+
+.bg_btn{
+    background-color: var(--grey);
+    border-radius: 1.1rem;
+    margin-right: 1rem;
 }
 
 .fa-chevron-up{
