@@ -3,13 +3,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: var(--font-zoom);
+    font-weight: 900;
 }
 
 :root {
     --font-zoom: "Lato", sans-serif;
     --dark: #222222;
-    --alert: #9b3020;
+    --alert: #ba2126;
     --white: #ffffff;
+    --hover: #4b52dc;
     --selection: #4bc700;
     --buttons: #4a4a4a;
 }
@@ -18,9 +20,30 @@
     display: flex;
 }
 
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    text-align: center;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.padding{
+    padding: 1rem;
+}
+
 a{
     text-decoration: none;
     color: var(--white);
+}
+
+a:hover, .container div:hover, .container span:hover{
+    color: var(--hover);
+    cursor: pointer;
 }
 
 
@@ -49,7 +72,6 @@ a{
 
 .btn_size span{
     margin: 0.2rem;
-    font-weight: 900;
     color: var(--white);
 }
 
@@ -73,4 +95,37 @@ nav {
     height: 10vh;
 }
 
+.left_menu{
+
+}
+
+.center_menu{
+
+}
+
+.right_menu{
+
+}
+
+.alert{
+    color: var(--alert);
+}
+
+.selection{
+    color: var(--selection);
+}
+
+.fa-chevron-up{
+    vertical-align: super;
+    padding-right: 1rem;
+    padding-left: 0.3rem;
+}
+
+.align-center .fa-solid{
+    font-size: 1.5rem;
+}
+
+.fa-user-plus, .fa-user-group, .fa-video, .fa-microphone, .fa-chart-column, .fa-share-from-square, .fa-comment, .fa-record-vinyl, .fa-grip, .fa-ellipsis{
+    padding: 0 1.5rem;
+}
 /* /Endregion Footer */
