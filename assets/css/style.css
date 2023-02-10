@@ -96,6 +96,7 @@ a:hover, .container div:hover, .container span:hover{
 
 .overview img{
     width: 100%;
+    max-width: 100%;
 }
 
 .img-card{
